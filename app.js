@@ -19,7 +19,7 @@ if ($scope.dishesList.trim().length === 0) {
         $scope.checked = true;
         $scope.isEmpty = false;
         var dishesListArray = $scope.dishesList.split(',');
-        if (arrayDishesWithoutEmptys.length <= 3) {
+        if (dishesListArray.length <= 3) {
             $scope.validationMessage = 'Enjoy!';
         } else {
             $scope.validationMessage = 'Too much!';
